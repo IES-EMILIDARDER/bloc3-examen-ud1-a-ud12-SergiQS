@@ -18,7 +18,7 @@ public class Main1 {
     new Vehicle("7890-VWX", "Renault",    "Clio",    2012,  9000)
 );
         
-        vehicles.stream().filter(f -> f.getAny() > 2014).distinct().collect(Collectors.toList()).forEach(System.out::println);
+        vehicles.stream().filter(f -> f.getAny() > 2014).distinct().sorted().collect(Collectors.toList()).forEach(System.out::println);
         
      
     }

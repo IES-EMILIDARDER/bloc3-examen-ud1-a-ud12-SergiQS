@@ -2,7 +2,7 @@ package examen;
 
 import java.util.Objects;
 
-class Vehicle {
+class Vehicle implements comparable <Vehicle> {
     private String matricula;
     private String marca;
     private String model;
