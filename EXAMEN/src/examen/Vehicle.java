@@ -20,7 +20,7 @@ class Vehicle {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 97 * hash + Objects.hashCode(this.matricula);
+        hash = 13 * hash + Objects.hashCode(this.matricula);
         return hash;
     }
 
@@ -38,7 +38,8 @@ class Vehicle {
         final Vehicle other = (Vehicle) obj;
         return Objects.equals(this.matricula, other.matricula);
     }
-    
+
+
 
     public String getMatricula() {
         return matricula;
